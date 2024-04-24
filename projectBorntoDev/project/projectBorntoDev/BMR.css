@@ -1,0 +1,313 @@
+@font-face {
+  font-family: 'Noto';
+  src: url(/Noto/NotoSansThaiLooped-Medium.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto';
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px 0px 20px;
+  border-bottom: 3px solid rgb(77, 112, 96);
+  background-color: white;
+}
+nav ul {
+  list-style: none;
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+}
+
+nav li:hover {
+  background-color: rgb(193, 197, 197);
+}
+
+.dropdown ul {
+  position: absolute;
+  display: none;
+  width: inherit;
+}
+
+.dropdown:hover ul {
+  display: block;
+}
+
+.listdrop {
+  background-color: rgb(238, 238, 238);
+}
+
+.maindropdown:hover .containerList {
+  display: block;
+}
+
+.logo {
+  margin-bottom: 10px;
+}
+
+.logo a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.menu {
+  display:flex;
+  list-style: none;
+}
+
+.menu li {
+  padding: 20px 20px 10px 20px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: rgb(112, 112, 112);
+}
+
+.banner {
+  background-image: linear-gradient(rgba(140, 170, 149, 0.616),rgb(254, 254, 255),rgba(255, 255, 255, 0));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 150px 0px 150px;
+}
+
+.banner-info {
+  text-align: center;
+  width: 900px;
+  padding: 20px;
+  color: rgb(55, 87, 60);
+}
+
+.banner-info img {
+  display: block;
+  width: 100%;
+  height: auto;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.349);
+}
+
+.topic {
+  padding-top: 10px;
+  font-size: 40px;
+  margin-top: 20px;
+}
+
+.textMain {
+  text-align: center;
+  /* padding: ; */
+  margin: 0px 0px 30px 0px;
+  text-indent: 50px;
+  line-height: 35px;
+}
+
+.inputInfo {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+}
+
+.inputInfo input {
+  display: none;
+}
+
+/* ปุ่มเลือกเพศ เริ่ม*/
+
+.gender {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.genderIcon1 {
+  max-width: 100px;
+  width: 100%;
+  height: auto;
+  padding: 0px 5px 15px 0px;
+}
+
+.genderIcon2 {
+  
+  max-width: 100px;
+  width: 100%;
+  height: auto;
+  padding: 0px 0px 15px 5px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="radio"]{
+  display: none;
+}
+
+label {
+  display: block;
+  position: relative;
+  text-align: center;
+  color: black;
+  font-size: auto;
+  height: auto;
+  width: 75px;
+  border: 2px solid rgb(97, 122, 94);
+  padding: 20px 0px 25px 0px;
+  margin-bottom: 10px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.226);
+} 
+
+.male {
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  background-color: rgb(255, 255, 255);
+}
+
+.female {
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  background-color: rgb(255, 255, 255);
+}
+
+label:before{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+}
+
+ input[type="radio"]:checked + label{
+  color: rgb(255, 255, 255);
+  background-color: rgb(59, 102, 51);
+}
+/* ปุ่มเลือกเพศ จบ*/
+
+.information {
+  background-color: rgb(223, 223, 223);
+  width: 100%;
+  height: 200px;
+  display: grid;
+  grid-template-columns: 2fr 0.5fr 2fr;
+  text-align: center;
+  line-height: 40px;
+  padding-top: 40px;
+}
+
+.textInformation1 {
+  color: rgb(42, 65, 47);
+  text-align: right;
+  padding-right: 10px;
+}
+
+.textInformation2 {
+  color: rgb(42, 65, 47);
+  text-align: left;
+  padding-left: 10px;
+}
+
+.boxInformation {
+  width: 100%;
+}
+
+.box {
+  border-radius: 15px;
+  border: 1px solid  rgb(255, 255, 255);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.075);
+}
+
+.sending {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.button {
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(162, 184, 162);
+  font-size: 15px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.349);
+}
+
+.button:hover {
+  background-color: darkolivegreen;
+  color: white;
+}
+
+input[type="number"]{
+  text-align: center;
+}
+
+.maincontainer {
+  background-color: rgb(203, 221, 209);
+  padding: 20px 0px 20px 0px;
+  margin-bottom: 20px;
+}
+
+.outputContainer {
+  margin: 0 auto;
+  background-color: rgb(167, 182, 172);
+  width: 300px;
+  height: 150px;
+  border: none;
+  border-radius: 15px;
+}
+
+.outputContainer h3 {
+  color: rgb(39, 66, 41);
+  text-align: center;
+  padding-top: 20px;
+}
+
+.output {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+
+@media only screen and (max-width: 425px) and (min-width: 320px) {
+  nav {
+    padding: 0px 20px 0px 20px;
+  }
+  .logo a {
+    font-size: 25px;
+  }
+  .menu li {
+    padding: 10px 20px 10px 20px;
+  }
+
+  .banner {
+    margin: 0px 0px 0px 0px;
+  }
+
+  .topic {
+    font-size: 30px;
+  }
+
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+  .logo a {
+    font-size: 40px;
+  }
+
+  .banner {
+    margin: 0px 0px 0px 0px;
+  }
+
+  .topic {
+    font-size: 40px;
+  }
+
+}
+
+

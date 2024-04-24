@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Health.care</title>
+  <link rel="stylesheet" href="health.css">
+  <link rel="icon" type="image/x-icon" href="https://media.discordapp.net/attachments/1210609707367006249/1227346250773434408/Untitled_Artwork.png?ex=66281245&is=66159d45&hm=fb8dbafc014fa847d985ef20b291014a30dc67f8f1cfa79c8904e5536248a637&=&format=webp&quality=lossless&width=676&height=676">
+  
+</head>
+<body>
+
+    <!-- Nav Start -->
+    <nav>
+      <div class="logo">
+        <a href="#">Health.care</a>
+      </div>
+
+      <ul class="menu">
+        <li><a href="home.html">Home</a></li>
+        <div class="maindropdown"></div>
+        <li class="dropdown"><a href="#">Menu</a>
+          <ul class="containerList">
+            <li class="listdrop"><a href="health.html">BMI</a></li>
+            <li class="listdrop"><a href="BMR.html">BMR</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <!-- Nav End -->
+
+    <!-- Banner start -->
+    <section class="banner">
+      <div class="banner-info">
+        <img src="https://media.discordapp.net/attachments/1210609707367006249/1229945886029774968/GettyImages-1399621085.jpg.webp?ex=6631875e&is=661f125e&hm=5e113cf825b98f838090c0cef17cae69455507728e5a8d2d8334cda8cbecb8f8&=&format=webp&width=960&height=403">
+
+        <h1>BMI CALCULATOR</h1>
+      </div>
+    </section>
+    <!-- Banner end -->
+
+    <!-- main start -->
+    <main>
+      <div>
+        <h3>ค่าดัชนีมวลกาย( Body Mass Index : BMI )</h3>
+        <p>ซึ่งค่าดัชนีมวลกายนี้มักถูกนำไปใช้เป็นตัวชี้วัดของปริมาณไขมันที่มีอยู่ในร่างกายของคนเรา (Body fat) ซึ่งองค์การอนามัยโลก (World Health Organization : WHO) ได้เป็นผู้กำหนดค่ามาตรฐาน BMI สำหรับผู้ที่มีอายุตั้งแต่ 20 ปีขึ้นไป  ใช้สำหรับการประเมินภาวะต่างๆของร่างกาย เช่น ผอม ปกติหรือสมส่วน อ้วน เป็นต้น โดยค่าต่างๆเหล่านี้สามารถช่วยในเรื่องของการบ่งบอกถึงภาวะโรคอ้วนเบื้องต้นได้</p>
+      </div>
+
+      <div class="two">
+        <h3 class="two">คำนวณหาค่าดัชนีมวลกาย</h3>
+        <span>น้ำหนัก</span>
+        <input id="input1" type="number"><span> kg.</span>
+        <br>
+        <span>ส่วนสูง</span>
+        <input id="input2" type="number"><span> cm.</span>
+        <br>
+        <button onclick="inputInformation()">คำนวณ</button>
+      </div>
+
+      <div>
+        <h3>YOUR BMI</h3>
+        <br>
+        <p id="result" value="";></p>
+        <p id="disease"></p>
+      </div>
+    </main>
+    <!-- main end -->
+      
+    <!-- section table start -->
+    <table>
+      <tr>
+        <th>BMI</th>
+        <th>เกณท์</th>
+        <th>ภาวะเสี่ยงต่อโรค</th>
+      </tr>
+      <tr>
+        <td>น้อยกว่า 18.50</td>
+        <td>น้ำหนักน้อย / ผอม</td>
+        <td>มากกว่าคนปกติ</td>
+      </tr>
+      <tr>
+        <td>ระหว่าง 18.50 - 22.90</td>
+        <td>ปกติ (สุขภาพดี)</td>
+        <td>เท่าคนปกติ</td>
+      </tr>
+      <tr>
+        <td>ระหว่าง 23 - 24.90</td>
+        <td>ท้วม</td>
+        <td>โรคอ้วนระดับ 1</td>
+      </tr>
+      <tr>
+        <td>ระหว่าง 25 - 29.90</td>
+        <td>อ้วน</td>
+        <td>โรคอ้วนระดับ 2</td>
+      </tr>
+      <tr>
+        <td>มากกว่า 30</td>
+        <td>อ้วนมาก</td>
+        <td>โรคอ้วนระดับ 3</td>
+      </tr>
+    </table>
+    <!-- section table end -->
+    
+    
+    <script src="health.js"></script>
+    
+  </body>
+  </html>

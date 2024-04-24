@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="BMR.css">
+</head>
+<body>
+
+  <div>
+    <nav>
+      <div class="logo">
+        <a href="home.html">Health.care</a>
+      </div>
+
+      <ul class="menu">
+        <li><a href="home.html">Home</a></li>
+        <div class="maindropdown"></div>
+        <li class="dropdown"><a href="#">Menu</a>
+          <ul class="containerList">
+            <li class="listdrop"><a href="health.html">BMI</a></li>
+            <li class="listdrop"><a href="BMR.html">BMR</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="banner">
+      <div class="banner-info">
+      <img src="https://media.discordapp.net/attachments/1210609707367006249/1229933886834737172/blog-hearthealthydiet.jpg?ex=66317c31&is=661f0731&hm=a93b4a10fbe701ee01439f7a84fc51a72dcdea10d8064cdb83146698d3a2dc9c&=&format=webp&width=960&height=480">
+    
+      <h1 class="topic">Basal Metabolic Rate</h1>
+      </div>
+    </section>
+    
+    <div class="textMain">อัตราการความต้องการเผาผลาญ หรือ (Basal Metabolic Rate : BMR) คือ อัตราการความต้องการเผาผลาญของร่างกายในชีวิตประจำวัน หรือจำนวนแคลอรี่ขั้นต่ำที่ต้องการใช้ในชีวิตแต่ละวัน
+    ดังนั้นการคำนวณ BMR จะช่วยให้คุณคำนวณปริมาณแคลอรี่ที่ใช้ต่อวันเพื่อรักษาน้ำหนักปัจจุบันได้ และเมื่ออายุมากขึ้นเราจะควบคุมน้ำหนักได้ยากขึ้น เพราะ BMR เราลดลง การอดอาหารก็เป็นสาเหตุหนึ่งที่ทำให้ BMR ลดลง วิธีป้องกันคือ "หมั่นออกกำลังกาย" เพื่อเพิ่มประสิทธิภาพของการเผาผลาญ ซึ่งจะทำให้ BMR ไม่ลดลงเร็วเกินไป
+    </div>
+
+  <div class="maincontainer">    
+    <div class="gender">
+      <div>
+        <img class="genderIcon1" src="https://media.discordapp.net/attachments/1210609707367006249/1232257454889242624/man.png?ex=6628ccaf&is=66277b2f&hm=8954307c9af2a29e2118cf19475c94a894ebd38cdd03c95db380e32618eb38b9&=&format=webp&quality=lossless";>
+      </div>
+
+      <div class="container">
+        <input type="radio" name="size" id="genderInfo1" checked="checked">
+        <label class="male" for="genderInfo1">ผู้ชาย</label>
+
+        <input type="radio" name="size" id="genderInfo2" checked="checked">
+        <label class="female" for="genderInfo2">ผู้หญิง</label>
+      </div>
+
+      <div>
+        <img class="genderIcon2" src="https://media.discordapp.net/attachments/1210609707367006249/1232257574770966589/doctor.png?ex=6628cccc&is=66277b4c&hm=43e16b6ccc074d6cd8daba89b677647b270c542d7fd59a6a44a74f96018ff23b&=&format=webp&quality=lossless";>
+      </div>
+    </div>
+
+    <div class="information">
+      <div class="textInformation1">
+        <span>น้ำหนัก</span><br>
+        <span>ส่วนสูง</span><br>
+        <span>อายุ</span>
+      </div>
+      <div class="boxInformation">
+        <input class="box" id="input3" type="number">
+        <br>
+        <input class="box" id="input4" type="number">
+        <br>
+        <input class="box" id="input5" type="number">
+      </div>
+      <div class="textInformation2">
+        <span>kg.</span><br>
+        <span>cm.</span><br>
+        <span>ปี</span>
+    
+      </div>
+    </div>
+    
+    <div class="sending">
+      <button class="button" onclick="inputInformation2()">คำนวณ</button>
+    </div>
+  </div>  
+  
+  <div class="outputContainer">
+    <h3>YOUR BMR</h3>
+    <p class="output" id="output"></p>
+  </div>
+
+  <script src="BMR.js"></script>
+
+  <br>
+  <br>
+  <br>
+
+</body>
+</html>

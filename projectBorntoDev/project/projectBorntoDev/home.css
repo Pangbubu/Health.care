@@ -1,0 +1,265 @@
+@font-face {
+  font-family: 'Noto';
+  src: url(/Noto/NotoSansThaiLooped-Medium.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto';
+}
+/* @media only screen and (max-width: 2560px) and (min-width: 1440px) { */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px 0px 20px;
+    border-bottom: 3px solid rgb(136, 113, 113);
+    background-color: white;
+  }
+  nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  nav li:hover {
+    background-color: rgb(193, 197, 197);
+  }
+
+  .dropdown ul {
+    position: absolute;
+    display: none;
+    width: inherit;
+  }
+
+  .dropdown:hover ul {
+    display: block;
+  }
+
+  .listdrop {
+    background-color: rgb(238, 238, 238);
+  }
+
+  .maindropdown:hover .containerList {
+    display: block;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+
+  .logo a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 40px;
+  }
+
+  .menu {
+    display:flex;
+    list-style: none;
+  }
+
+  .menu li {
+    padding: 20px 20px 10px 20px;
+  }
+
+  .menu li a {
+    text-decoration: none;
+    color: rgb(112, 112, 112);
+  }
+
+  .banner {
+    text-align: center;
+    margin: 40px;
+    font-size: 50px;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.171);
+    color: rgb(71, 71, 71);
+  }
+
+  /* PhotoSlides */
+  * {box-sizing:border-box}
+
+  .slideshow-container {
+    width: 900px;
+    position: relative;
+    margin: auto;
+  }
+
+  .photoSlides {
+    width: 500px;
+    height: 450px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.24);
+    border-radius: 10px;
+  }
+
+  .mySlides {
+    display: none;
+  }
+
+  .fade {
+    animation-name: fade;
+    animation-duration: 3s;
+  }
+
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  /* PhotoSlides */
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 80px;
+  }
+
+  main div {
+      text-align: center;
+      background-color: rgb(247, 236, 219);
+      margin: 100px 150px 100px 150px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.24);
+      border-radius: 15px;
+  }
+
+  .photo {
+    width: 100%;
+    height: 350px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+
+  .text {
+    padding: 50px 5px 50px 5px;
+    text-align: center;
+    text-indent: 50px;
+    font-size: 18px;
+    background-color: rgb(242, 234, 255);
+    margin-top: 80px;
+    line-height: 35px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.336);
+
+  }
+
+  main h3 {
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+  }
+
+  main p {
+    margin: 10px 50px 0px 50px;
+    line-height: 30px;
+    text-indent: 50px;
+  }
+
+  main button {
+    font-size: 18px;
+    cursor: pointer;
+    margin: 20px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    border: none;
+    width: 150px;
+    height: 50px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.432);
+  }
+
+  main button:hover {
+    background-color: rgb(105, 105, 105);
+    color: white;
+  }
+
+  .mainBox1 {
+    margin-right: 20px;
+  }
+  .mainBox2 {
+    margin-left: 20px;
+    background-color: rgba(211, 156, 156, 0.527);
+  }
+
+
+@media only screen and (max-width: 425px) and (min-width: 320px) {
+  nav {
+    padding: 0px 20px 0px 20px;
+  }
+  .logo a {
+    font-size: 25px;
+  }
+  .menu li {
+    padding: 10px 20px 10px 20px;
+  }
+  .banner {
+    margin: 20px;
+    font-size: 12px;
+  }
+  .slideshow-container {
+    width: 100%;
+    height: 150px;
+  }
+  .photoSlides {
+    height: 200px;
+  }
+  .text {
+    padding: 15px 5px 15px 5px;
+    font-size: 15px;
+  }
+  main {
+    display: block;
+  }
+  main div {
+    margin: 20px 0px 20px 0px;
+  }
+  .photo {
+    height: 180px;
+  }
+  main p {
+    font-size: 15px;
+    margin: 0px 2px 0px 2px;
+  }
+  .mainBox1 {
+    margin-right: 0px;
+  }
+  .mainBox2 {
+    margin-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+  .logo a {
+    font-size: 40px;
+  }
+  .menu li {
+    padding: 20px 20px 10px 20px;
+  }
+  .banner {
+    font-size: 30px;
+  }
+  .slideshow-container {
+    width: 700px;
+    height: 350px;
+  }
+  .photoSlides {
+    width: 500px;
+    height: 350px;
+  }
+  main {
+    display: block;
+  }
+  main div {
+    margin: 20px 0px 20px 0px;
+  }
+  .photo {
+    height: 200px;
+  }
+  main p {
+    font-size: 15px;
+    margin: 0px 2px 0px 2px;
+  }
+  .mainBox1 {
+    margin-right: 0px;
+  }
+  .mainBox2 {
+    margin-left: 0px;
+  }
+}
