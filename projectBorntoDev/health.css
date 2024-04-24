@@ -1,0 +1,231 @@
+@font-face {
+  font-family: 'Noto';
+  src: url(/Noto/NotoSansThaiLooped-Medium.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto';
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px 0px 20px;
+  border-bottom: 3px solid rgb(172, 62, 62);
+  background-color: white;
+}
+nav ul {
+  list-style: none;
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+}
+
+nav li:hover {
+  background-color: rgb(193, 197, 197);
+}
+
+.dropdown ul {
+  position: absolute;
+  display: none;
+  width: inherit;
+}
+
+.dropdown:hover ul {
+  display: block;
+}
+
+.listdrop {
+  background-color: rgb(238, 238, 238);
+}
+
+.maindropdown:hover .containerList {
+  display: block;
+}
+.logo {
+  margin-bottom: 10px;
+}
+.logo a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.menu {
+  display:flex;
+  list-style: none;
+}
+
+.menu li {
+  padding: 20px 20px 10px 20px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: rgb(112, 112, 112);
+}
+
+.banner {
+  background-image: linear-gradient(rgba(206, 206, 206, 0.616),rgb(254, 254, 255),rgba(255, 255, 255, 0));
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 150px 0px 150px;
+}
+
+.banner-info {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 10px;
+  color: rgb(90, 90, 90);
+}
+
+.banner-info img {
+  width: 900px;
+  height: 400px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.349);
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  color: rgb(107, 107, 107);
+}
+
+.two {
+  background-color: rgb(146, 51, 51);
+  color: white;
+  
+}
+
+main div {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.123);
+  margin: 0px 50px 0px 50px;
+  padding: 40px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.11);
+}
+
+
+main div h3 {
+  padding-bottom: 15px;
+  font-size: 20px;
+  color: rgb(146, 51, 51);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.096);
+}
+
+main div input {
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+main div button {
+  font-size: 15px;
+  color: rgb(78, 78, 78);
+  padding: 12px 25px 12px 25px;
+  margin-top: 10px;
+  border-radius: 15px;
+  border: none;
+  box-shadow: 3px 3px 8px rgba(63, 63, 63, 0.212);
+  background-image: linear-gradient(to right,rgb(255, 255, 255),rgb(243, 243, 243));
+}
+
+main div button:hover {
+  background-image: linear-gradient(to right,rgb(117, 117, 117),rgb(87, 87, 87));
+  color: rgb(255, 255, 255);
+}
+
+table {
+  background-color: rgb(201, 201, 201);
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  color: rgb(109, 34, 34);
+  text-align: left;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  box-shadow: 3px 3px 8px rgba(63, 63, 63, 0.212);;
+}
+
+table th {
+  padding: 10px;
+}
+
+table td {
+  padding: 5px 10px 5px 10px;
+}
+
+@media only screen and (max-width: 425px) and (min-width: 320px) {
+  nav {
+    padding: 0px 20px 0px 20px;
+  }
+  .logo a {
+    font-size: 25px;
+  }
+  .menu li {
+    padding: 10px 20px 10px 20px;
+  }
+  .banner {
+    margin: 0px;
+    height: 300px;
+  }
+  .banner-info {
+    font-size: 25px;
+  }
+  .banner-info img {
+    max-width: 100%;
+    height: 200px;
+  }
+  main {
+    display: block;
+  }
+  main div h3 {
+    padding-bottom: 0px;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  main div {
+    margin: 0px 5px 5px 5px;
+  }
+  table {
+    font-size: 12px;
+    padding: 10px;
+    margin-top: 15px;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+  .banner {
+    margin: 0px;
+    height: 430px;
+  }
+  .banner-info {
+    font-size: 30px;
+  }
+  .banner-info img {
+    max-width: 100%;
+    height: 300px;
+  }
+  main {
+    display: block;
+  }
+  main div h3 {
+    padding-bottom: 0px;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  main div {
+    margin: 0px 5px 5px 5px;
+  }
+  table {
+    font-size: 15px;
+    padding: 10px;
+    margin-top: 15px;
+  }
+}
